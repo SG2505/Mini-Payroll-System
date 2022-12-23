@@ -1,0 +1,31 @@
+.root{
+        -fx-background-color: #355C7D ;
+     }
+.radio-button{
+                -fx-font-family: "Trebuchet MS";
+                -fx-font-size: 14px;
+                -fx-text-fill: #e4dfd9;
+             }
+.label  {
+        -fx-font-family: "Trebuchet MS";
+        -fx-text-fill: #e4dfd9;
+        }
+.text-field{
+            -fx-font-family: "Trebuchet MS";
+            -fx-font-size: 12px;
+           }
+.button{
+          -fx-font-family: "Trebuchet MS";
+          -fx-font-size: 18px;
+       }
+
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+                                                -fx-background-color: #252525;
+                                              }

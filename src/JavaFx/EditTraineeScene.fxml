@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.EditTraineeController">
+   <children>
+      <Label alignment="CENTER" layoutX="234.0" layoutY="46.0" prefHeight="74.0" prefWidth="331.0" text="Edit Trainee Information">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="176.0" prefHeight="38.0" prefWidth="286.0" text="Please choose what you want to edit:">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="NameRadio" layoutX="54.0" layoutY="232.0" mnemonicParsing="false" onAction="#radio" text="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="ziad" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="AgeRadio" layoutX="149.0" layoutY="232.0" mnemonicParsing="false" onAction="#radio" text="Age" toggleGroup="$ziad">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="IDRadio" layoutX="224.0" layoutY="232.0" mnemonicParsing="false" onAction="#radio" text="ID" toggleGroup="$ziad">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="UniNameRadio" layoutX="289.0" layoutY="232.0" mnemonicParsing="false" onAction="#radio" text="University Name" toggleGroup="$ziad">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="GPARadio" layoutX="437.0" layoutY="232.0" mnemonicParsing="false" onAction="#radio" text="GPA" toggleGroup="$ziad">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="exitButton" layoutX="14.0" layoutY="549.0" mnemonicParsing="false" onAction="#exit" text="Exit">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="716.0" layoutY="549.0" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="70.0" text="Back">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="submitButton" disable="true" layoutX="346.0" layoutY="548.0" mnemonicParsing="false" onAction="#submit" prefHeight="38.0" prefWidth="108.0" text="Submit">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="AcademicYearButton" layoutX="517.0" layoutY="232.0" mnemonicParsing="false" onAction="#radio" text="Academic Year" toggleGroup="$ziad">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="myLabel" layoutX="24.0" layoutY="284.0" prefHeight="38.0" prefWidth="188.0" text="Enter the new Data:" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="myTextField" layoutX="214.0" layoutY="291.0" visible="false" />
+      <Label fx:id="statusLabel" alignment="CENTER" layoutX="401.0" layoutY="284.0" prefHeight="158.0" prefWidth="388.0" text="Success!" visible="false">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
